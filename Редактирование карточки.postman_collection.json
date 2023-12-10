@@ -1,0 +1,1904 @@
+{
+	"info": {
+		"_postman_id": "93dc95af-c491-4d71-99a3-247d44af380d",
+		"name": "Редактирование карточки",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14429318"
+	},
+	"item": [
+		{
+			"name": "POSITIVE",
+			"item": [
+				{
+					"name": "Имя: 1 символ/кириллица",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_name\":\"и\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Имя: 2 символа/кириллица",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_name\":\"ия\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Имя: 10 символов/кириллица",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_name\":\"александра\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Имя: 29 символов/кириллица",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_name\":\"александраалександраалександр\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Имя: 30 символов/кириллица",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_name\":\"александраалександраалександра\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Имя: верхний регистр",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_name\":\"ИВАН\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Имя: есть пробел",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_name\":\"Иван первый\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Фамилия: 1 символ/кириллица",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Last_name\":\"И\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Фамилия: 2 символа/кириллица",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Last_name\":\"ия\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Фамилия: 10 символов/кириллица",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Last_name\":\"петрушкинн\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Фамилия: 29 символов/кириллица",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Last_name\":\"петрушкиннпетрушкиннпетрушкин\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Фамилия: 30 символов/кириллица",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Last_name\":\"петрушкиннпетрушкиннпетрушкинн\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Фамилия: верхний регистр",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Last_name\":\"ИВАНОВ\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Фамилия: есть пробел",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Last_name\":\"Иванов первый\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Дата рождения/старше 18 лет",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"15.07.1995\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Дата рождения/18 лет",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"15.07.1995\" //установить от текущей ровно на 18 лет\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Пол: Мужской",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"gender\":\"Man\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Пол: Женский",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"gender\":\"Woman\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Изменение в нескольких параметрах сразу",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n    \"First_name\": \"тест\",\r\n    \"Last_name\": \"Тестов\",\r\n    \"date\":\"15.07.1995\",\r\n    \"gender\":\"Man\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "NEGATIVE",
+			"item": [
+				{
+					"name": "Имя: латиница",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_name\":\"ivan\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Имя: цифры",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_name\":\"1\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Имя: спецсимволы",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_name\":\"иван%\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Имя: только пробелы",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_name\":\"   \"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Имя: пустая строка",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_name\":\"\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Имя: не строка",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_name\": {{$randomBoolean}}\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Имя: > 30 символов",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_name\":\"АлександраАлександраАлександраА\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Фамилия: латиница",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Last_name\":\"ivanov\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Фамилия: цифры",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Last_name\":\"1\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Фамилия: спецсимволы",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Last_name\":\"иванов*\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Фамилия: только пробелы",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Last_name\":\"   \"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Фамилия: пустая строка",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Last_name\":\"\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Фамилия: не строка",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Last_name\":{{$randomBoolean}}\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Фамилия: > 30 символов",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Last_name\":\"ТестовТестовТестовТестовТестовТ\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Дата рождения/младше 18 лет",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"15.07.2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Дата рождения/кириллица",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"те.12.2002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Дата рождения/латиница",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"te.12.2002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Дата рождения/спецсимволы",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"&&.12.1980\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Дата рождения/некорректная дата",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"84.34.2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Дата рождения/неполная дата",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"15.07. \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Дата рождения/пустая",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Дата рождения/булево",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":{{$randomBoolean}}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Пол: значение отличное от \"Man\"/\"Woman\"",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"gender\":\"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Пол: не строка",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"gender\":{{$randomBoolean}}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Пол: пустая строка",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"gender\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"host": [
+								"https"
+							],
+							"port": "",
+							"path": [
+								"stage",
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1275"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -44,13 +44,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -58,7 +56,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -67,6 +65,19 @@
 				},
 				{
 					"name": "Имя: 2 символа/кириллица",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -80,13 +91,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -94,7 +103,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -103,6 +112,19 @@
 				},
 				{
 					"name": "Имя: 10 символов/кириллица",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -116,13 +138,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -130,7 +150,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -139,6 +159,19 @@
 				},
 				{
 					"name": "Имя: 29 символов/кириллица",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -152,13 +185,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -166,7 +197,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -175,6 +206,19 @@
 				},
 				{
 					"name": "Имя: 30 символов/кириллица",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -188,13 +232,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -202,7 +244,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -211,6 +253,19 @@
 				},
 				{
 					"name": "Имя: верхний регистр",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -224,13 +279,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -238,7 +291,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -247,6 +300,19 @@
 				},
 				{
 					"name": "Имя: есть пробел",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -260,13 +326,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -274,7 +338,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -283,6 +347,19 @@
 				},
 				{
 					"name": "Фамилия: 1 символ/кириллица",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -296,13 +373,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -310,7 +385,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -319,6 +394,19 @@
 				},
 				{
 					"name": "Фамилия: 2 символа/кириллица",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -332,13 +420,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -346,7 +432,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -355,6 +441,19 @@
 				},
 				{
 					"name": "Фамилия: 10 символов/кириллица",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -368,13 +467,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -382,7 +479,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -391,6 +488,19 @@
 				},
 				{
 					"name": "Фамилия: 29 символов/кириллица",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -404,13 +514,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -418,7 +526,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -427,6 +535,19 @@
 				},
 				{
 					"name": "Фамилия: 30 символов/кириллица",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -440,13 +561,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -454,7 +573,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -463,6 +582,19 @@
 				},
 				{
 					"name": "Фамилия: верхний регистр",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -476,13 +608,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -490,7 +620,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -499,6 +629,19 @@
 				},
 				{
 					"name": "Фамилия: есть пробел",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -512,13 +655,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -526,7 +667,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -535,6 +676,19 @@
 				},
 				{
 					"name": "Дата рождения/старше 18 лет",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -548,13 +702,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -562,7 +714,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -571,6 +723,19 @@
 				},
 				{
 					"name": "Дата рождения/18 лет",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -584,13 +749,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -598,7 +761,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -607,6 +770,19 @@
 				},
 				{
 					"name": "Пол: Мужской",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -620,13 +796,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -634,7 +808,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -643,6 +817,19 @@
 				},
 				{
 					"name": "Пол: Женский",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -656,13 +843,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -670,7 +855,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -679,6 +864,19 @@
 				},
 				{
 					"name": "Изменение в нескольких параметрах сразу",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -692,13 +890,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -706,7 +902,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -725,8 +921,8 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -753,13 +949,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -767,7 +961,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -781,8 +975,8 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -809,13 +1003,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -823,7 +1015,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -837,8 +1029,8 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -865,13 +1057,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -879,7 +1069,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -893,8 +1083,8 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -921,13 +1111,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -935,7 +1123,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -949,8 +1137,8 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -977,13 +1165,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -991,7 +1177,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1005,8 +1191,8 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1033,13 +1219,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1047,7 +1231,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1061,8 +1245,8 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1089,13 +1273,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1103,7 +1285,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1117,8 +1299,8 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1145,13 +1327,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1159,7 +1339,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1173,8 +1353,8 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1201,13 +1381,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1215,7 +1393,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1229,8 +1407,8 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1257,13 +1435,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1271,7 +1447,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1285,8 +1461,8 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1313,13 +1489,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1327,7 +1501,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1341,8 +1515,8 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1369,13 +1543,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1383,7 +1555,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1397,8 +1569,8 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1425,13 +1597,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1439,7 +1609,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1453,8 +1623,8 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1481,13 +1651,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1495,7 +1663,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1504,6 +1672,19 @@
 				},
 				{
 					"name": "Дата рождения/младше 18 лет",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -1517,13 +1698,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1531,7 +1710,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1540,6 +1719,19 @@
 				},
 				{
 					"name": "Дата рождения/кириллица",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -1553,13 +1745,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1567,7 +1757,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1576,6 +1766,19 @@
 				},
 				{
 					"name": "Дата рождения/латиница",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -1589,13 +1792,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1603,7 +1804,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1612,6 +1813,19 @@
 				},
 				{
 					"name": "Дата рождения/спецсимволы",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -1625,13 +1839,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1639,7 +1851,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1648,6 +1860,19 @@
 				},
 				{
 					"name": "Дата рождения/некорректная дата",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -1661,13 +1886,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1675,7 +1898,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1684,6 +1907,19 @@
 				},
 				{
 					"name": "Дата рождения/неполная дата",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -1697,13 +1933,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1711,7 +1945,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1720,6 +1954,19 @@
 				},
 				{
 					"name": "Дата рождения/пустая",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -1733,13 +1980,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1747,7 +1992,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1756,6 +2001,19 @@
 				},
 				{
 					"name": "Дата рождения/булево",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -1769,13 +2027,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1783,7 +2039,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1792,6 +2048,19 @@
 				},
 				{
 					"name": "Пол: значение отличное от \"Man\"/\"Woman\"",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -1805,13 +2074,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1819,7 +2086,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1828,6 +2095,19 @@
 				},
 				{
 					"name": "Пол: не строка",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -1841,13 +2121,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1855,7 +2133,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}
@@ -1864,6 +2142,19 @@
 				},
 				{
 					"name": "Пол: пустая строка",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -1877,13 +2168,11 @@
 							}
 						},
 						"url": {
-							"raw": "https:/stage/api/v1/edit_card?id=1275",
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
 							"host": [
-								"https"
+								"{{TestURL}}"
 							],
-							"port": "",
 							"path": [
-								"stage",
 								"api",
 								"v1",
 								"edit_card"
@@ -1891,7 +2180,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1275"
+									"value": "{{CardID}}"
 								}
 							]
 						}

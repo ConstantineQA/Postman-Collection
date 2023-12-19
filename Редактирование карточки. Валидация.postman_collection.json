@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "93dc95af-c491-4d71-99a3-247d44af380d",
-		"name": "Редактирование карточки",
+		"name": "Редактирование карточки. Валидация",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "14429318"
 	},

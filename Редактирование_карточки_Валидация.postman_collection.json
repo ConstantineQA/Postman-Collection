@@ -1,7 +1,8 @@
 {
 	"info": {
 		"_postman_id": "93dc95af-c491-4d71-99a3-247d44af380d",
-		"name": "Редактирование карточки. Валидация",
+		"name": "Редактирование_карточки_Валидация",
+		"description": "Перед запуском коллекции проверить значения для запросов по изменению значений: пол, дата рождения.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "14429318"
 	},
@@ -27,8 +28,8 @@
 							"listen": "prerequest",
 							"script": {
 								"exec": [
-									"const name1 = \"ЙЦУКЕНГШЩЗХйцукенгшщзхъФЫВАПРОЛДЖЭфывапролджэЯЧСМИТЬБЮячсмитьбюЁё\";\r",
-									"console.log(_.sample(name1.split(\"\"), 1).join(\"\"));"
+									"const firstName1 = \"ЙЦУКЕНГШЩЗХйцукенгшщзхъФЫВАПРОЛДЖЭфывапролджэЯЧСМИТЬБЮячсмитьбюЁё\";\r",
+									"console.log(_.sample(firstName1.split(\"\"), 1).join(\"\"));"
 								],
 								"type": "text/javascript"
 							}
@@ -61,7 +62,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"First_name\":{{name1}}\r\n} ",
+							"raw": "{\r\n    \"First_name\":{{firstName1}}\r\n} ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -106,8 +107,8 @@
 							"listen": "prerequest",
 							"script": {
 								"exec": [
-									"const name2 = \"ЙЦУКЕНГШЩЗХйцукенгшщзхъФЫВАПРОЛДЖЭфывапролджэЯЧСМИТЬБЮячсмитьбюЁё \";\r",
-									"console.log(_.sample(name2.split(\"\"), 2).join(\"\"));"
+									"const firstName1 = \"ЙЦУКЕНГШЩЗХйцукенгшщзхъФЫВАПРОЛДЖЭфывапролджэЯЧСМИТЬБЮячсмитьбюЁё\";\r",
+									"console.log(_.sample(firstName1.split(\"\"), 2).join(\"\"));"
 								],
 								"type": "text/javascript"
 							}
@@ -133,7 +134,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"First_name\":{{name2}}\r\n} ",
+							"raw": "{\r\n    \"First_name\":{{firstName1}}\r\n} ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -178,8 +179,8 @@
 							"listen": "prerequest",
 							"script": {
 								"exec": [
-									"const name2 = \"ЙЦУКЕНГШЩЗХйцукенгшщзхъФЫВАПРОЛДЖЭфывапролджэЯЧСМИТЬБЮячсмитьбюЁё \";\r",
-									"console.log(_.sample(name2.split(\"\"), 10).join(\"\"));"
+									"const firstName1 = \"ЙЦУКЕНГШЩЗХйцукенгшщзхъФЫВАПРОЛДЖЭфывапролджэЯЧСМИТЬБЮячсмитьбюЁё\";\r",
+									"console.log(_.sample(firstName1.split(\"\"), 10).join(\"\"));"
 								],
 								"type": "text/javascript"
 							}
@@ -205,7 +206,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"First_name\":{{name2}}\r\n} ",
+							"raw": "{\r\n    \"First_name\":{{firstName1}}\r\n} ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -245,6 +246,16 @@
 								],
 								"type": "text/javascript"
 							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const firstName1 = \"ЙЦУКЕНГШЩЗХйцукенгшщзхъФЫВАПРОЛДЖЭфывапролджэЯЧСМИТЬБЮячсмитьбюЁё\";\r",
+									"console.log(_.sample(firstName1.split(\"\"), 29).join(\"\"));"
+								],
+								"type": "text/javascript"
+							}
 						}
 					],
 					"request": {
@@ -267,7 +278,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"First_name\":\"александраалександраалександр\"\r\n}",
+							"raw": "{\r\n    \"First_name\":{{firstName1}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -298,67 +309,15 @@
 					"name": "Имя: 30 символов/кириллица",
 					"event": [
 						{
-							"listen": "test",
+							"listen": "prerequest",
 							"script": {
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});"
+									"const firstName1 = \"ЙЦУКЕНГШЩЗХйцукенгшщзхъФЫВАПРОЛДЖЭфывапролджэЯЧСМИТЬБЮячсмитьбюЁё\";\r",
+									"console.log(_.sample(firstName1.split(\"\"), 30).join(\"\"));"
 								],
 								"type": "text/javascript"
 							}
-						}
-					],
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "{{password}}",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "{{username}}",
-									"type": "string"
-								}
-							]
 						},
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"First_name\":\"александраалександраалександра\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
-							"host": [
-								"{{TestURL}}"
-							],
-							"path": [
-								"api",
-								"v1",
-								"edit_card"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "{{CardID}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Имя: верхний регистр",
-					"event": [
 						{
 							"listen": "test",
 							"script": {
@@ -391,7 +350,151 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"First_name\":\"ИВАН\"\r\n}",
+							"raw": "{\r\n    \"First_name\":{{firstName1}}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
+							"host": [
+								"{{TestURL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{CardID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Имя: только верхний регистр",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const firstName2 = \"ЙЦУКЕНГШЩЗХФЫВАПРОЛДЖЭЯЧСМИТЬБЮЁ\";\r",
+									"console.log(_.sample(firstName2.split(\"\"), 10).join(\"\"));"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_name\":{{firstName2}}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
+							"host": [
+								"{{TestURL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{CardID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Имя: только нижний регистр",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const firstName3 = \"йцукенгшщзхъэждлорпавыфячсмитьбюё\";\r",
+									"console.log(_.sample(firstName3.split(\"\"), 10).join(\"\"));"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_name\":{{firstName3}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -431,6 +534,15 @@
 								],
 								"type": "text/javascript"
 							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
 						}
 					],
 					"request": {
@@ -453,7 +565,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"First_name\":\"Иван первый\"\r\n}",
+							"raw": "{\r\n    \"First_name\":\"Иван Первый\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -493,6 +605,16 @@
 								],
 								"type": "text/javascript"
 							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const lastName1 = \"ЙЦУКЕНГШЩЗХйцукенгшщзхъФЫВАПРОЛДЖЭфывапролджэЯЧСМИТЬБЮячсмитьбюЁё\";\r",
+									"console.log(_.sample(lastName1.split(\"\"), 1).join(\"\"));"
+								],
+								"type": "text/javascript"
+							}
 						}
 					],
 					"request": {
@@ -515,7 +637,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"Last_name\":\"И\"\r\n}",
+							"raw": "{\r\n    \"Last_name\":{{lastName1}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -555,6 +677,16 @@
 								],
 								"type": "text/javascript"
 							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const lastName1 = \"ЙЦУКЕНГШЩЗХйцукенгшщзхъФЫВАПРОЛДЖЭфывапролджэЯЧСМИТЬБЮячсмитьбюЁё\";\r",
+									"console.log(_.sample(lastName1.split(\"\"), 2).join(\"\"));"
+								],
+								"type": "text/javascript"
+							}
 						}
 					],
 					"request": {
@@ -577,7 +709,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"Last_name\":\"ия\"\r\n} ",
+							"raw": "{\r\n    \"Last_name\":{{lastName1}}\r\n} ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -617,6 +749,16 @@
 								],
 								"type": "text/javascript"
 							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const lastName1 = \"ЙЦУКЕНГШЩЗХйцукенгшщзхъФЫВАПРОЛДЖЭфывапролджэЯЧСМИТЬБЮячсмитьбюЁё\";\r",
+									"console.log(_.sample(lastName1.split(\"\"), 10).join(\"\"));"
+								],
+								"type": "text/javascript"
+							}
 						}
 					],
 					"request": {
@@ -639,7 +781,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"Last_name\":\"петрушкинн\"\r\n} ",
+							"raw": "{\r\n    \"Last_name\":{{lastName1}}\r\n} ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -679,6 +821,16 @@
 								],
 								"type": "text/javascript"
 							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const lastName1 = \"ЙЦУКЕНГШЩЗХйцукенгшщзхъФЫВАПРОЛДЖЭфывапролджэЯЧСМИТЬБЮячсмитьбюЁё\";\r",
+									"console.log(_.sample(lastName1.split(\"\"), 10).join(\"\"));"
+								],
+								"type": "text/javascript"
+							}
 						}
 					],
 					"request": {
@@ -701,7 +853,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"Last_name\":\"петрушкиннпетрушкиннпетрушкин\"\r\n}",
+							"raw": "{\r\n    \"Last_name\":{{lastName1}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -741,6 +893,16 @@
 								],
 								"type": "text/javascript"
 							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const lastName1 = \"ЙЦУКЕНГШЩЗХйцукенгшщзхъФЫВАПРОЛДЖЭфывапролджэЯЧСМИТЬБЮячсмитьбюЁё\";\r",
+									"console.log(_.sample(lastName1.split(\"\"), 10).join(\"\"));"
+								],
+								"type": "text/javascript"
+							}
 						}
 					],
 					"request": {
@@ -763,7 +925,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"Last_name\":\"петрушкиннпетрушкиннпетрушкинн\"\r\n}",
+							"raw": "{\r\n    \"Last_name\":{{lastName1}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -791,8 +953,90 @@
 					"response": []
 				},
 				{
-					"name": "Фамилия: верхний регистр",
+					"name": "Фамилия: только верхний регистр",
 					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const lastName2 = \"ЙЦУКЕНГШЩЗХФЫВАПРОЛДЖЭЯЧСМИТЬБЮЁ\";\r",
+									"console.log(_.sample(lastName2.split(\"\"), 10).join(\"\"));"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Last_name\":{{lastName2}}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{TestURL}}/api/v1/edit_card?id={{CardID}}",
+							"host": [
+								"{{TestURL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"edit_card"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{CardID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Фамилия: только нижний регистр",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const lastName3 = \"йцукенгшщзхъэждлорпавыфячсмитьбюё\";\r",
+									"console.log(_.sample(lastName3.split(\"\"), 10).join(\"\"));"
+								],
+								"type": "text/javascript"
+							}
+						},
 						{
 							"listen": "test",
 							"script": {
@@ -825,7 +1069,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"Last_name\":\"ИВАНОВ\"\r\n}",
+							"raw": "{\r\n    \"Last_name\":{{lastName3}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -949,7 +1193,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"date\":\"15.07.1995\"\r\n}",
+							"raw": "{\r\n    \"date\":\"15.07.1910\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1197,7 +1441,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{  \r\n    \"First_name\": \"тест\",\r\n    \"Last_name\": \"Тестов\",\r\n    \"date\":\"15.07.1995\",\r\n    \"gender\":\"Man\"\r\n}",
+							"raw": "{  \r\n    \"First_name\": \"для теста\",\r\n    \"Last_name\": \"Тестов\",\r\n    \"date\":\"15.07.1995\",\r\n    \"gender\":\"Man\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
